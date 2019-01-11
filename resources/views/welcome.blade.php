@@ -81,7 +81,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <p>Hello {{ $name }} &nbsp; with the blade </p>
+                    <p>Hello <?php echo $name; ?> &nbsp; with Vanilla php </p>
+                    <p>Hello <?= $name ?> &nbsp; with the shorthand </p>
                 </div>
 
                 <div class="links">
