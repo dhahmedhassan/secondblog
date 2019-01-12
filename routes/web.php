@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome')->with('name', 'John');
+    $name = 'John the compacted';
+    return view('welcome', compact('name'));
 });

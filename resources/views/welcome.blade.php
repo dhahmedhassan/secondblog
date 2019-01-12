@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Styles -->
         <style>
@@ -81,9 +82,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <p>Hello {{ $name }} &nbsp; with the blade </p>
-                    <p>Hello <?php echo $name; ?> &nbsp; with Vanilla php </p>
-                    <p>Hello <?= $name ?> &nbsp; with the shorthand </p>
+                    <p>Hello {{ $name }} </p>
                 </div>
 
                 <div class="links">
