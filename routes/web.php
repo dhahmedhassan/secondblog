@@ -1,5 +1,5 @@
 <?php
-
+use App\Task;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,16 +12,15 @@
 */
 
 Route::get('/tasks', function () {
-    $tasks = DB::table('tasks')->latest() // latest() is for descending order
-                                ->get();  // get() is for fetching the records
+    $tasks = Task::latest() // latest() is for descending order
+                     ->get();  // get() is for fetching the records
 
     // return $tasks; // this returns JASON format
     return view('tasks.index', compact('tasks'));
 });
 
 Route::get('/tasks/{id}', function ($id) {
-    $task = DB::table('tasks')->find($id); // find() is to search in database
-                                // ->get();  // get() is for fetching the records
+    $task = Task::find($id); // find() is to search in database
 
     // return $tasks; // this returns JASON format
     return view('tasks.show', compact('task'));
