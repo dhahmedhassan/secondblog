@@ -85,7 +85,7 @@
                     <ul class="list-group">
                         @foreach ($tasks as $task)
                             <li class="list-group-item">
-                                <a href="#">{{ $task->body }}</a>
+                                <a href="tasks/{{$task->id}}">{{ $task->body }}</a>
                             </li>
                         @endforeach
                     </ul>
