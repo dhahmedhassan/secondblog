@@ -16,11 +16,8 @@ class TasksController extends Controller
         return view('tasks.index', compact('tasks'));
     }
 
-    public function show($id)
+    public function show(Task $task)
     {
-        $task = Task::find($id); // find() is to search in database
-
-        // return $tasks; // this returns JASON format
         return view('tasks.show', compact('task'));
     }
 }
