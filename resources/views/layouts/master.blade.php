@@ -28,8 +28,8 @@
         <div class="col-sm-8 blog-main">
           @yield('content')
           
-          @include('layouts.sidebar')
         </div><!-- /.row -->
+        @include('layouts.sidebar')
 
     </div><!-- /.container -->
 
