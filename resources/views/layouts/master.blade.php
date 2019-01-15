@@ -11,9 +11,6 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
     
-    <!-- Bootstrap core CSS -->
-    {{-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> --}}
-    
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
@@ -22,7 +19,7 @@
 
   <body>
 
-    @include('layouts.header')
+    @include('layouts.navbar')
 
     <div class="container">
 
@@ -30,10 +27,9 @@
 
         <div class="col-sm-8 blog-main">
           @yield('content')
-
-        @include('layouts.sidebar')
-
-      </div><!-- /.row -->
+          
+          @include('layouts.sidebar')
+        </div><!-- /.row -->
 
     </div><!-- /.container -->
 
