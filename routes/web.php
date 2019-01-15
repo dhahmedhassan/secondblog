@@ -9,6 +9,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::any('/', 'PostsController@index');
+
+Route::any('/posts/create', 'PostsController@create');
+
+Route::any('/posts/{id}', 'PostsController@show');
 
 Route::get('/tasks', 'TasksController@index');
 
