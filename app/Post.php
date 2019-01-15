@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Task extends Model
+class Post extends Model
 {
     //
 }
